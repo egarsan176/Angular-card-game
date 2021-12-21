@@ -28,9 +28,11 @@ export class AppComponent {
 
   constructor(private dialog: MatDialog) {}
 
+
   ngOnInit(): void {
     this.setupCards();
   }
+
   //esta función recorre los ID de imagen de nuestra tarjeta,
   //crea un objeto CardData para cada uno y luego envía dos
   //copias del objeto a nuestra matriz de tarjetas.
@@ -83,6 +85,7 @@ export class AppComponent {
 
   //este método comprueba si existe una coincidencia entre dos cartas
   checkForCardMatch(): void {
+    //se usa el setTimeout para dar tiempo a que se completen las animaciones antes de verificar si hay o no coincidencias
     setTimeout(() => {
       const cardOne = this.flippedCards[0];
       const cardTwo = this.flippedCards[1];

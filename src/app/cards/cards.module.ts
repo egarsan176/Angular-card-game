@@ -1,17 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { GameCardComponent } from './game-card/game-card.component';
+import { InputBusquedaComponent } from './input-busqueda/input-busqueda.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [
-    GameCardComponent
+    GameCardComponent,
+    InputBusquedaComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   exports: [
-    GameCardComponent
+    GameCardComponent,
+    InputBusquedaComponent
   ]
 
 })

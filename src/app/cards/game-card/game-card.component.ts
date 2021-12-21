@@ -48,3 +48,4 @@ export class GameCardComponent implements OnInit {
   }
 
 }
+
